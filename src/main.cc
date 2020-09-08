@@ -11,11 +11,11 @@ int Add(int a, int b)
 
 }
 
-void PrintArrStr(char* arrString)
+void PrintArrStr(const char* arrString)
 {
     for(int i=0; i < 5; i++)
     {
-        std::cout << arrString[i] + i << std::endl;
+        std::cout << arrString + i << std::endl;
     }
 }
 
@@ -31,9 +31,9 @@ int main()
     // char charArr[]{'h','e','l','l','o'};
     // char charArr2[]{"hello"};
 
-    char* myString{"Hello"};
+    const char* myString{"Hello"};
 
-    PrintArrStr(myString);//[0]->dasasd memoria numero
+    PrintArrStr(myString); //[0]->dasasd memoria numero
 
     // for(int i=0; i < 5; i++)
     // {
